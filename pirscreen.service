@@ -1,10 +1,12 @@
+#service description for systemd
+
 [Unit]
 Description=Pir Screen
 After=network.target
 
 [Service]
-User=sentinel
-WorkingDirectory=/home/sentinel/pirscreen 
+User=pi
+WorkingDirectory=/home/pi/pirscreen 
 ExecStart=python3 pirscreen.py
 Restart=always
 
